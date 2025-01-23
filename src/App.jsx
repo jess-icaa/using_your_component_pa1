@@ -35,25 +35,23 @@ function App() {
     },
   ];
 
-  const App = () => {
     return (
       <div className='app'>
         <h1>Digital Library</h1>
         <div className='book-list'>
-          {booksData.map((book, index) => (
+          {books.map((book) => (
             <BookCard
-            key={index}
-            title={book.title}
+            key={book.id}
+            name={book.name}
             author={book.author}
-            description={book.description}
-            coverImage={book.coverImage}
+            genre={book.genre}
+            image={book.image}
             />
           ))}
         </div>
       </div>
     )
   }
-}
+
 
 export default App;
-``

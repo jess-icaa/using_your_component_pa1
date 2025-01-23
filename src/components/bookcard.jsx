@@ -1,14 +1,14 @@
 // write the book component code here
 import React from 'react';
 
-const BookCard = ({ title, author, description, coverImage }) => {
+const BookCard = ({ image, name, author, genre }) => {
     return (
         <div className='book-card'>
-            <img src={coverImage} alt={title} />
+            <img src={image} alt={name} />
             <div className='book-details'>
-                <h2 className='book-title'>{title}</h2>
+                <h2 className='book-title'>{name}</h2>
                 <p className='book-author'>by {author}</p>
-                <p className='book-description'>{description}</p>
+                <p className='book-description'>{genre}</p>
             </div>
         </div>
     );
